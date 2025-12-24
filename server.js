@@ -8,7 +8,7 @@ app.use(express.json());
 const TOTAL_RECORDS = 1000;
 const users = Array.from({ length: TOTAL_RECORDS }).map((_, i) => ({
     _id: `user-id-${i + 1}`,
-    name: `Austin User ${i + 1}`,
+    name: `User ${i + 1}`,
     email: `user${i + 1}@example.com`,
     age: Math.floor(Math.random() * 40) + 18,
     createdAt: new Date().toDateString(),
